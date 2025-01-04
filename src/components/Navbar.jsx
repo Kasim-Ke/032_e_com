@@ -7,13 +7,13 @@ const Navbar = () => {
     <div className="absolute inset-0 lg:w-[1440px] md:w-[768px] w-[375px] h-[90px] mx-auto flex items-center justify-center ">
       <div className=" lg:w-[1110px] h-[28px] md:w-[689px] w-[327px] flex justify-between items-center">
         <img
-          className="block  md:hidden  w-[16px] h-[15px] "
+          className="block  md:hidden  w-[16px] h-[15px] cursor-pointer "
           src={burger}
           alt="burger"
         />
         <div className="flex justify-between md:w-[200px] items-center   ">
           <img
-            className="md:block  hidden lg:hidden w-[16px] h-[15px] "
+            className="md:block  hidden lg:hidden w-[16px] h-[15px] cursor-pointer "
             src={burger}
             alt="burger"
           />
