@@ -32,7 +32,7 @@ const HomeHero = () => {
             XX99 Mark II Headphones
           </h1>
           <p className="lg:leading-[25px] lg:mx-2 lg:text-left text-center ">
-            Experience natural, lifelike audio and exceptional build quality
+            Experience natural, life like audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
           <button className="bg-[#D87D4A]  hover:bg-[#FBAF85]">
