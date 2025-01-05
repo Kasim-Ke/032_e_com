@@ -5,7 +5,7 @@ import heroMobile from "../assets/home/mobile/image-header.jpg";
 
 const HomeHero = () => {
   return (
-    <div className=" relative lg:max-w-[1440px] md:max-w-[768px] w-full mx-auto flex items-center justify-center  ">
+    <div className=" relative lg:max-w-[1440px] md:max-w-[768px] max-w-[375px] mx-auto flex items-center justify-center  ">
       <div className="relative mx-auto ">
         <hr className="absolute lg:w-[1110px] md:w-[689px] lg:left-[165px] top-[90px] md:left-[39px]  w-full border-t border-[#979797] opacity-20" />
 
