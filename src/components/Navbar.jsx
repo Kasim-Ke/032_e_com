@@ -21,16 +21,16 @@ const Navbar = () => {
         </div>
 
         <div className="font-bold w-[429px] h-[25px] uppercase text-white lg:flex justify-between hidden text-[13px]">
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 ">
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
             home
           </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 ">
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
             headphones
           </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 ">
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
             speakers
           </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 ">
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
             earphones
           </h5>
         </div>
