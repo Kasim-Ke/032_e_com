@@ -14,7 +14,7 @@ function HomeFristSpeaker() {
         src={ring}
         alt="ring"
       />
-      <div className="   lg:w-[1110px] lg:h-[560px] md:w-[689px] md:h-[720px] w-[327px] h-[600px] bg-[#D87D4A] rounded-[8px] flex lg:items-end items-center justify-center">
+      <div className=" lg:w-[1110px] lg:h-[560px] md:w-[689px] md:h-[720px] w-[327px] h-[600px] bg-[#D87D4A] rounded-[8px] flex lg:items-end items-center justify-center">
         <div className="relative flex lg:justify-end justify-between items-center lg:flex-row flex-col lg:w-[895px] lg:h-[465px] md:w-[350px] md:h-[604px] w-[280px] h-[490px] ">
           <img
             className="absolute  left-3 w-[410px] h-[464px] z-20 object-cover lg:block hidden"
@@ -28,7 +28,7 @@ function HomeFristSpeaker() {
           />
 
           <img
-            className="object-cover md:hidden block w-[172px] h-[207px] "
+            className="object-cover md:hidden block w-[172px] h-[207px] z-20 "
             src={speakerMobile}
             alt="speakerMobile"
           />
@@ -36,7 +36,7 @@ function HomeFristSpeaker() {
             <h1 className="font-bold md:text-[56px] md:leading-[58px] text-[36px] leading-[40px] tracking-[1.29px] md:tracking-[2px] uppercase lg:text-left text-center">
               ZX9 <span className="block">SPEAKER</span>
             </h1>
-            <p className="lg:leading-[25px] lg:mr-4 lg:text-left text-center ">
+            <p className="lg:leading-[25px] lg:mr-4 lg:text-left text-center text-white/75">
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound.
             </p>

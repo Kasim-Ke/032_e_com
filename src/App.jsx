@@ -1,3 +1,4 @@
+import HomeSecondSpeaker from "./components/HomeSecondSpeaker";
 import HomeFristSpeaker from "./components/HomeFristSpeaker";
 import HomeHero from "./components/HomeHero";
 import HomeProducts from "./components/HomeProducts";
@@ -10,6 +11,7 @@ function App() {
       <HomeHero />
       <HomeProducts />
       <HomeFristSpeaker />
+      <HomeSecondSpeaker />
     </>
   );
 }
