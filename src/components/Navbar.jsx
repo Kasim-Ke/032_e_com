@@ -21,20 +21,24 @@ const Navbar = () => {
         </div>
 
         <div className="font-bold w-[429px] h-[25px] uppercase text-white lg:flex justify-between hidden text-[13px]">
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-110 hover:tracking-wide  ">
             home
           </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-110 hover:tracking-wide ">
             headphones
           </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-110 hover:tracking-wide ">
             speakers
           </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-110 hover:tracking-wide ">
             earphones
           </h5>
         </div>
-        <img className="cursor-pointer " src={cart} alt="cart" />
+        <img
+          className="cursor-pointer hover:scale-110 duration-300 "
+          src={cart}
+          alt="cart"
+        />
       </div>
     </div>
   );

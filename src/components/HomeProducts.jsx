@@ -40,7 +40,7 @@ function HomeProducts() {
                 <h4 className="text-[18px] tracking-[1.30px]">
                   {product.name}
                 </h4>
-                <p className="w-[57px] h-[18px] flex justify-between items-center text-[13px] tracking-[1px] cursor-pointer hover:text-[#D87D4A] duration-300">
+                <p className="w-[57px] h-[18px] flex justify-between items-center text-[13px] tracking-[1px] cursor-pointer hover:text-[#D87D4A] hover:scale-110 duration-300">
                   shop
                   <img className="w-[10px] h-[15px]" src={arrow} alt="arrow" />
                 </p>
