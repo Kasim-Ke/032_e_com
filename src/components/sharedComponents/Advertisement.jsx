@@ -1,6 +1,6 @@
-import adDekstop from "../assets/shared/desktop/image-best-gear.jpg";
-import adTablet from "../assets/shared/tablet/image-best-gear.jpg";
-import adMobile from "../assets/shared/mobile/image-best-gear.jpg";
+import adDekstop from "./shared/desktop/image-best-gear.jpg";
+import adTablet from "./shared/tablet/image-best-gear.jpg";
+import adMobile from "./shared/mobile/image-best-gear.jpg";
 
 export const Advertisement = () => {
   return (

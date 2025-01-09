@@ -1,7 +1,7 @@
-import hpDesktop from "../assets/shared/desktop/image-category-thumbnail-headphones.png";
-import spDesktop from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
-import erDesktop from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
-import arrow from "../assets/shared/desktop/icon-arrow-right.svg";
+import hpDesktop from "./shared/desktop/image-category-thumbnail-headphones.png";
+import spDesktop from "./shared/desktop/image-category-thumbnail-speakers.png";
+import erDesktop from "./shared/desktop/image-category-thumbnail-earphones.png";
+import arrow from "./shared/desktop/icon-arrow-right.svg";
 
 const products = [
   {

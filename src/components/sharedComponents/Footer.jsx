@@ -1,4 +1,4 @@
-import logo from "../assets/shared/desktop/logo.svg";
+import logo from "./shared/desktop/logo.svg";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 

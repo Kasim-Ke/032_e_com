@@ -1,7 +1,7 @@
-import heroDektop from "../assets/home/desktop/image-hero.jpg";
-import heroTablet from "../assets/home/tablet/image-header.jpg";
+import heroDektop from "./home/desktop/image-hero.jpg";
+import heroTablet from "./home/tablet/image-header.jpg";
 
-import heroMobile from "../assets/home/mobile/image-header.jpg";
+import heroMobile from "./home/mobile/image-header.jpg";
 
 const HomeHero = () => {
   return (

@@ -1,10 +1,10 @@
-import speakerDesktop from "../assets/home/desktop/image-speaker-zx9.png";
+import speakerDesktop from "./home/desktop/image-speaker-zx9.png";
 
-import speakerTablet from "../assets/home/tablet/image-speaker-zx9.png";
+import speakerTablet from "./home/tablet/image-speaker-zx9.png";
 
-import speakerMobile from "../assets/home/mobile/image-speaker-zx9.png";
+import speakerMobile from "./home/mobile/image-speaker-zx9.png";
 
-import ring from "../assets/home/desktop/pattern-circles.svg";
+import ring from "./home/desktop/pattern-circles.svg";
 
 function HomeFristSpeaker() {
   return (

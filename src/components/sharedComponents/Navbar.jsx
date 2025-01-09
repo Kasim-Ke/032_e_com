@@ -1,6 +1,8 @@
-import logo from "../assets/shared/desktop/logo.svg";
-import cart from "../assets/shared/desktop/icon-cart.svg";
-import burger from "../assets/shared/tablet/icon-hamburger.svg";
+import { Link } from "react-router";
+
+import logo from "./shared/desktop/logo.svg";
+import cart from "./shared/desktop/icon-cart.svg";
+import burger from "./shared/tablet/icon-hamburger.svg";
 
 const Navbar = () => {
   return (
@@ -21,16 +23,22 @@ const Navbar = () => {
         </div>
 
         <div className="font-bold w-[429px] h-[25px] uppercase text-white lg:flex justify-between hidden text-[13px]">
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-110 hover:tracking-wide  ">
+          <Link
+            to="/"
+            className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105  "
+          >
             home
-          </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-110 hover:tracking-wide ">
+          </Link>
+          <Link
+            to="/headphones"
+            className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105  "
+          >
             headphones
-          </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-110 hover:tracking-wide ">
+          </Link>
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
             speakers
           </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-110 hover:tracking-wide ">
+          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
             earphones
           </h5>
         </div>
