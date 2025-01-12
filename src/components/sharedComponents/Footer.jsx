@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import logo from "./shared/desktop/logo.svg";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -9,18 +11,30 @@ export const Footer = () => {
         <div className="lg:w-[1110px] lg:h-[61px] md:w-[429px] md:h-[82px] w-[143px] h-[212px] flex lg:flex-row flex-col justify-between md:items-start mx-auto md:mx-0 items-center  uppercase font-bold text-[13px] tracking-[2px] text-white">
           <img src={logo} alt="logo" />
           <div className="w-[400px] flex justify-between items-center md:flex-row flex-col md:h-[25px] h-[148px]">
-            <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105">
+            <Link
+              to="/"
+              className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
+            >
               home
-            </h5>
-            <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105">
+            </Link>
+            <Link
+              to="headphones"
+              className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
+            >
               headphones
-            </h5>
-            <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105">
+            </Link>
+            <Link
+              to="speakers"
+              className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
+            >
               speakers
-            </h5>
-            <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105">
+            </Link>
+            <Link
+              to="earphones"
+              className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
+            >
               earphones
-            </h5>
+            </Link>
           </div>
         </div>
         <div className="lg:w-[1110px] flex lg:flex-row flex-col items-center justify-between">

@@ -24,7 +24,7 @@ export const Advertisement = () => {
             </p>
           </div>
         </div>
-        <div className="">
+        <div>
           <img
             className="object-cover lg:block hidden rounded-[8px]"
             src={adDekstop}

@@ -35,12 +35,18 @@ const Navbar = () => {
           >
             headphones
           </Link>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
+          <Link
+            to="speakers"
+            className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 "
+          >
             speakers
-          </h5>
-          <h5 className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 ">
+          </Link>
+          <Link
+            to="earphones"
+            className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105 "
+          >
             earphones
-          </h5>
+          </Link>
         </div>
         <img
           className="cursor-pointer hover:scale-110 duration-300 "

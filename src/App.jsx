@@ -50,6 +50,8 @@ function App() {
             </>
           }
         />
+        <Route path="/speakers" element={<></>} />
+        <Route path="/earphones" element={<></>} />
       </Routes>
       <Advertisement />
       <Footer />
