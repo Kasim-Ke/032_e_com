@@ -5,22 +5,22 @@ import heroMobile from "./home/mobile/image-header.jpg";
 
 const HomeHero = () => {
   return (
-    <div className=" relative lg:max-w-[1440px] md:max-w-[768px] max-w-[375px] mx-auto flex items-center justify-center  ">
+    <div className=" relative lg:max-w-[1440px] md:max-w-[768px] max-w-[375px] mx-auto flex items-center justify-center   ">
       <div className="relative mx-auto ">
         <hr className="absolute lg:w-[1110px] md:w-[689px] lg:left-[165px] top-[90px] md:left-[39px]  w-full border-t border-[#979797] opacity-20" />
 
         <img
-          className="object-cover lg:block hidden"
+          className="object-cover lg:block hidden  rounded-[8px]"
           src={heroDektop}
           alt="heroDektop"
         />
         <img
-          className="object-cover lg:hidden md:block hidden"
+          className="object-cover lg:hidden md:block hidden  rounded-[8px]"
           src={heroTablet}
           alt="heroTablet"
         />
         <img
-          className="object-cover md:hidden block"
+          className="object-cover md:hidden block  rounded-[8px]"
           src={heroMobile}
           alt="heroMobile"
         />

@@ -9,17 +9,17 @@ const HeaphonesThird = () => {
     <div className="lg:w-[1110px] lg:h-[560px] md:w-[689px] md:h-[706px] w-[327px] h-[724px]  lg:flex-row my-[8rem] flex-col mx-auto flex items-center justify-between  ">
       <div className="  ">
         <img
-          className="w-[540px] h-[560px] object-cover lg:block hidden"
+          className="w-[540px] h-[560px] object-cover lg:block hidden  rounded-[8px]"
           src={markDesktop}
           alt="markDesktop"
         />
         <img
-          className="w-full h-[352px] object-cover lg:hidden md:block hidden"
+          className="w-full h-[352px] object-cover lg:hidden md:block hidden  rounded-[8px]"
           src={markablet}
           alt="markablet"
         />
         <img
-          className="w-[327px] h-[352px] object-cover md:hidden block"
+          className="w-[327px] h-[352px] object-cover md:hidden block  rounded-[8px]"
           src={marIPhone}
           alt="marIPhone"
         />
