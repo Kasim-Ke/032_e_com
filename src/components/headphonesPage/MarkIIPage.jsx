@@ -13,13 +13,13 @@ const MarkIIPage = () => {
   };
 
   const handleDecrement = () => {
-    setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1)); // Prevent going below 1
+    setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
   };
 
   return (
     <div className="relative lg:w-[1110px] lg:h-[560px] md:w-[689px] md:h-[706px] w-[327px] h-[724px] lg:flex-row my-[8rem] flex-col mx-auto flex items-center justify-between">
       <Link
-        to="/"
+        to="/headphones"
         className="absolute font-bold top-[-80px] left-[0px] opacity-50 hover:opacity-100"
       >
         Go Back

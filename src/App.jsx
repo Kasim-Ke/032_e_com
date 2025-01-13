@@ -27,6 +27,9 @@ import SpeakersSecond from "./components/speakersPage/SpeakersSecond";
 import EarphonesHeader from "./components/earphonesPage/EarphonesHeader";
 import Earphones from "./components/earphonesPage/Earphones";
 import MarkIIHeader from "./components/headphonesPage/MarkIIHeader";
+import MarkIIFeatures from "./components/headphonesPage/MarkIIFeatures";
+import MarkIIGallery from "./components/headphonesPage/MarkIIGallery";
+import MArkIIAlsoLike from "./components/headphonesPage/MArkIIAlsoLike";
 
 function App() {
   return (
@@ -84,6 +87,10 @@ function App() {
             <>
               <MarkIIHeader />
               <MarkIIPage />
+              <MarkIIFeatures />
+              <MarkIIGallery />
+              <MArkIIAlsoLike />
+              <HomeProducts />
             </>
           }
         />
