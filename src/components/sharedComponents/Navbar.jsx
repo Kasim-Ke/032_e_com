@@ -73,7 +73,9 @@ const Navbar = () => {
               alt="burger"
               onClick={toggleMenu}
             />
-            <img src={logo} alt="logo" />
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
           </div>
 
           {/* Links */}
@@ -81,21 +83,21 @@ const Navbar = () => {
             <Link
               to="/headphones"
               className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
-              onClick={closeMenu} // Close the menu when link is clicked
+              onClick={closeMenu}
             >
               headphones
             </Link>
             <Link
               to="/speakers"
               className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
-              onClick={closeMenu} // Close the menu when link is clicked
+              onClick={closeMenu}
             >
               speakers
             </Link>
             <Link
               to="/earphones"
               className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
-              onClick={closeMenu} // Close the menu when link is clicked
+              onClick={closeMenu}
             >
               earphones
             </Link>
@@ -112,21 +114,21 @@ const Navbar = () => {
         {/* Tablet and Mobile Menu */}
         {isMenuOpen && (
           <div
-            className={`absolute top-0 left-1/2 transform -translate-x-1/2 md:w-[768px] md:h-[340px] w-[375px] h-[850px] bg-white flex items-center justify-center rounded-b-[8px] transition-transform duration-500 ease-in-out ${
+            className={`absolute top-0 left-1/2 transform -translate-x-1/2 md:w-[768px] md:h-[340px] w-[375px] h-[650px] bg-white flex items-center justify-center rounded-b-[8px] transition-transform duration-500 ease-in-out ${
               isMenuOpen ? "translate-y-[4rem]" : "-translate-y-full"
             }`}
           >
-            <div className="lg:w-[1110px] lg:h-[284px] md:w-[689px] md:h-[217px] w-[327px] h-[683px] flex md:flex-row flex-col items-center justify-between">
+            <div className=" md:w-[689px] md:h-[217px] w-[327px] h-[683px] flex md:flex-row flex-col items-center justify-evenly">
               {products.map((product, index) => (
                 <Link
                   to={product.path}
                   key={index}
-                  className="lg:h-[284px] md:w-[223px] md:h-[217px] w-[327px] flex flex-col justify-end hover:scale-105 duration-300 z-20"
+                  className=" md:w-[223px] md:h-[217px] w-[327px] flex flex-col justify-end hover:scale-105 duration-300 z-20"
                   onClick={closeMenu} // Close menu when product is clicked
                 >
-                  <div className="relative flex flex-col items-center justify-end bg-[#F1F1F1] w-full lg:h-[204px] h-[165px] rounded-[8px]">
+                  <div className="relative flex flex-col items-center justify-end bg-[#F1F1F1] w-full md:h-[165px] h-[135px] rounded-[8px]">
                     <img
-                      className="absolute top-[-32%] object-cover lg:w-[200px] lg:h-[200px] w-[125px] h-[145px]"
+                      className="absolute top-[-32%] object-cover md:w-[120px] md:h-[140px] w-[90px] h-[110px]"
                       src={product.image}
                       alt={product.alt}
                     />
