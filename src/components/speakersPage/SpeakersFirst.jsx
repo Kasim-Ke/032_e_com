@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-import fSpeakerDesktop from "./product-zx9-speaker/desktop/image-product.jpg";
+import fSpeakerDesktop from "./product-zx9-speaker/desktop/image-category-page-preview.jpg";
 
-import fSpeakerablet from "./product-zx9-speaker/tablet/image-product.jpg";
+import fSpeakerablet from "./product-zx9-speaker/tablet/image-category-page-preview.jpg";
 
-import fSpeakerPhone from "./product-zx9-speaker/mobile/image-product.jpg";
+import fSpeakerPhone from "./product-zx9-speaker/mobile/image-category-page-preview.jpg";
 
 const SpeakersFirst = () => {
   return (

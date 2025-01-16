@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-import speakerDesktop from "./product-zx7-speaker/desktop/image-product.jpg";
+import speakerDesktop from "./product-zx7-speaker/desktop/image-category-page-preview.jpg";
 
-import speakerblet from "./product-zx7-speaker/desktop/image-product.jpg";
+import speakerblet from "./product-zx7-speaker/tablet/image-category-page-preview.jpg";
 
-import speakerPhone from "./product-zx7-speaker/desktop/image-product.jpg";
+import speakerPhone from "./product-zx7-speaker/mobile/image-category-page-preview.jpg";
 
 const SpeakersSecond = () => {
   return (

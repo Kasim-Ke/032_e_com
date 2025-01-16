@@ -1,10 +1,10 @@
 import { Link } from "react-router";
 
-import earDesktop from "./product-yx1-earphones/desktop/image-product.jpg";
+import earDesktop from "./product-yx1-earphones/desktop/image-category-page-preview.jpg";
 
-import eartablet from "./product-yx1-earphones/tablet/image-product.jpg";
+import eartablet from "./product-yx1-earphones/tablet/image-category-page-preview.jpg";
 
-import speakerPhone from "./product-yx1-earphones/mobile/image-product.jpg";
+import speakerPhone from "./product-yx1-earphones/mobile/image-category-page-preview.jpg";
 
 const Earphones = () => {
   return (
