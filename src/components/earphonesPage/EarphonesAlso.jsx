@@ -1,27 +1,18 @@
 import { Link } from "react-router-dom";
 
-import markIDesktop from "./product-xx99-mark-one-headphones/desktop/image-product.jpg";
-import markITablet from "./product-xx99-mark-one-headphones/tablet/image-product.jpg";
-import markIMobile from "./product-xx99-mark-one-headphones/mobile/image-product.jpg";
+import markIDesktop from "../headphonesPage/product-xx99-mark-one-headphones/desktop/image-product.jpg";
+import markITablet from "../headphonesPage/product-xx99-mark-one-headphones/tablet/image-product.jpg";
+import markIMobile from "../headphonesPage/product-xx99-mark-one-headphones/mobile/image-product.jpg";
 
-import xDesktop from "./product-xx99-mark-two-headphones/desktop/image-product.jpg";
-import xITablet from "./product-xx99-mark-two-headphones/tablet/image-product.jpg";
-import xMobile from "./product-xx99-mark-two-headphones/mobile/image-product.jpg";
+import xDesktop from "../headphonesPage/product-xx59-headphones/desktop/image-product.jpg";
+import xITablet from "../headphonesPage/product-xx59-headphones/tablet/image-product.jpg";
+import xMobile from "../headphonesPage/product-xx59-headphones/mobile/image-product.jpg";
 
-import speakerDesktop from "./product-zx9-speaker/desktop/image-product.jpg";
-import speakerTablet from "./product-zx9-speaker/tablet/image-product.jpg";
-import speakerMobile from "./product-zx9-speaker/mobile/image-product.jpg";
+import speakerDesktop from "../speakersPage/product-zx9-speaker/desktop/image-product.jpg";
+import speakerTablet from "../speakersPage//product-zx9-speaker/tablet/image-product.jpg";
+import speakerMobile from "../speakersPage//product-zx9-speaker/mobile/image-product.jpg";
 
 const products = [
-  {
-    name: "XX99 MARK II",
-    images: {
-      desktop: xDesktop,
-      tablet: xITablet,
-      mobile: xMobile,
-    },
-    path: "/fristMark", // Define a unique path for this product
-  },
   {
     name: "XX99 MARK I",
     images: {
@@ -30,6 +21,15 @@ const products = [
       mobile: markIMobile,
     },
     path: "/fristMark",
+  },
+  {
+    name: "XX59 ",
+    images: {
+      desktop: xDesktop,
+      tablet: xITablet,
+      mobile: xMobile,
+    },
+    path: "/thirdMark",
   },
   {
     name: "ZX9 SPEAKER",
@@ -42,7 +42,7 @@ const products = [
   },
 ];
 
-const ThirdAlsoLike = () => {
+const EarphonesAlso = () => {
   return (
     <div className="lg:w-[1110px] lg:h-[571px] md:w-[691px] md:h-[563px] w-[327px] h-[983px] flex flex-col justify-between items-center mx-auto my-[6rem] ">
       <h3 className="uppercase font-bold md:text-[32px] md:leading-[36px] tracking-[1.14px] text-[24px] leading-[36px] md:tracking-[0.86px]">
@@ -84,4 +84,4 @@ const ThirdAlsoLike = () => {
   );
 };
 
-export default ThirdAlsoLike;
+export default EarphonesAlso;

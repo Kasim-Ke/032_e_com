@@ -46,6 +46,10 @@ import SecondSpeakerPage from "./components/speakersPage/product-zx7-speaker/Sec
 import SecondSpeakerFeature from "./components/speakersPage/product-zx7-speaker/SecondSpeakerFeature";
 import SecondSpeakerGallery from "./components/speakersPage/product-zx7-speaker/SecondSpeakerGallery";
 import SecondSpeakerAlso from "./components/speakersPage/product-zx7-speaker/SecondSpeakerAlso";
+import EarphonePage from "./components/earphonesPage/product-yx1-earphones/EarphonePage";
+import EarphonesFeatures from "./components/earphonesPage/product-yx1-earphones/EarphonesFeatures";
+import EarphonesGallery from "./components/earphonesPage/product-yx1-earphones/EarphonesGallery";
+import EarphonesAlso from "./components/earphonesPage/EarphonesAlso";
 
 function App() {
   return (
@@ -158,6 +162,19 @@ function App() {
               <SecondSpeakerFeature />
               <SecondSpeakerGallery />
               <SecondSpeakerAlso />
+              <HomeProducts />
+            </>
+          }
+        />
+        <Route
+          path="/earphonesPage"
+          element={
+            <>
+              <MarkIIHeader />
+              <EarphonePage />
+              <EarphonesFeatures />
+              <EarphonesGallery />
+              <EarphonesAlso />
               <HomeProducts />
             </>
           }

@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import earDesktop from "./product-yx1-earphones/desktop/image-product.jpg";
 
 import eartablet from "./product-yx1-earphones/tablet/image-product.jpg";
@@ -29,17 +31,18 @@ const Earphones = () => {
           NEW PRODUCT
         </h3>
         <h1 className="font-bold lg:text-start md:text-[40px] md:leading-[44px] text-[28px]  tracking-[1px] md:tracking-[1.43px] uppercase text-center md:mx- lg:mx-0 ">
-          ZX9 <span className="block">SPEAKER</span>
+          YX1 WIRELESS <span className="block">EARPHONES</span>
         </h1>
         <p className="text-[15px] opacity-50 lg:leading-[25px] lg:mr-1 lg:text-left text-center md:mx-4 lg:mx-0   ">
-          Upgrade your sound system with the all new ZX9 active speaker. It’s a
-          bookshelf speaker system that offers truly wireless connectivity --
-          creating new possibilities for more pleasing and practical audio
-          setups.
+          Tailor your listening experience with bespoke dynamic drivers from the
+          new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even
+          in noisy environments with its active noise cancellation feature.
         </p>
-        <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
-          See Product
-        </button>
+        <Link to="/earphonesPage">
+          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
+            See Product
+          </button>
+        </Link>
       </div>
     </div>
   );

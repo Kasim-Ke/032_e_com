@@ -38,7 +38,7 @@ const products = [
       tablet: speakerTablet,
       mobile: speakerMobile,
     },
-    path: "/fristMark/zx9-speaker", // Define a unique path for this product
+    path: "/firstSpeaker ", // Define a unique path for this product
   },
 ];
 
