@@ -12,17 +12,17 @@ const HomeHero = () => {
         <hr className="absolute lg:w-[1110px] md:w-[689px] lg:left-[165px] top-[90px] md:left-[39px]  w-full border-t border-[#979797] opacity-20" />
 
         <img
-          className="object-cover lg:block hidden  rounded-[8px]"
+          className="object-cover lg:block hidden  "
           src={heroDektop}
           alt="heroDektop"
         />
         <img
-          className="object-cover lg:hidden md:block hidden  rounded-[8px]"
+          className="object-cover lg:hidden md:block hidden  "
           src={heroTablet}
           alt="heroTablet"
         />
         <img
-          className="object-cover md:hidden block  rounded-[8px]"
+          className="object-cover md:hidden block  "
           src={heroMobile}
           alt="heroMobile"
         />

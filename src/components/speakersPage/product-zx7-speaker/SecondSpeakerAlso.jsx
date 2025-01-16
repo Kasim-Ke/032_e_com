@@ -14,13 +14,13 @@ import speakerMobile from "../product-zx9-speaker/desktop/image-product.jpg";
 
 const products = [
   {
-    name: "ZX7 SPEAKER",
+    name: "ZX9 SPEAKER",
     images: {
       desktop: speakerDesktop,
       tablet: speakerTablet,
       mobile: speakerMobile,
     },
-    path: "/secondSpeaker",
+    path: "/firstSpeaker", // Define a unique path for this product
   },
   {
     name: "XX99 MARK I",
@@ -29,7 +29,7 @@ const products = [
       tablet: xITablet,
       mobile: xMobile,
     },
-    path: "/thirdMark", // Define a unique path for this product
+    path: "/fristMark ", // Define a unique path for this product
   },
   {
     name: "XX59",
@@ -38,7 +38,7 @@ const products = [
       tablet: markITablet,
       mobile: markIMobile,
     },
-    path: "/fristMark",
+    path: "/thirdMark",
   },
 ];
 

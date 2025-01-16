@@ -17,12 +17,12 @@ const FirstSpeakerPage = () => {
   };
   return (
     <div className="relative lg:w-[1110px] lg:h-[560px] md:w-[689px] md:h-[706px] w-[327px] h-[724px] lg:flex-row my-[8rem] flex-col mx-auto flex items-center justify-between">
-      <Link
-        to="/speakers"
-        className="absolute font-bold top-[-80px] left-[0px] opacity-50 hover:opacity-100"
+      <button
+        onClick={() => window.history.back()}
+        className="absolute font-bold top-[-95px] left-[0px] opacity-50 hover:opacity-100 text-[15px]"
       >
         Go Back
-      </Link>
+      </button>
       <Link
         to="/"
         className="absolute font-bold top-[-80px] right-[0px] opacity-50 hover:opacity-100"
