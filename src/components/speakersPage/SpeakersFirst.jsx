@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import fSpeakerDesktop from "./product-zx9-speaker/desktop/image-product.jpg";
 
 import fSpeakerablet from "./product-zx9-speaker/tablet/image-product.jpg";
@@ -37,9 +39,11 @@ const SpeakersFirst = () => {
           creating new possibilities for more pleasing and practical audio
           setups.
         </p>
-        <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
-          See Product
-        </button>
+        <Link to="/firstSpeaker">
+          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
+            See Product
+          </button>
+        </Link>
       </div>
     </div>
   );

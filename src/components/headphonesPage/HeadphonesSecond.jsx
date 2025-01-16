@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import markIDesktop from "./product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg";
 
 import markIablet from "./product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg";
@@ -16,9 +18,11 @@ const HeadphonesSecond = () => {
           detailed and accurate audio reproduction for audiophiles, mixing
           engineers, and music aficionados alike in studios and on the go.
         </p>
-        <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
-          See Product
-        </button>
+        <Link to="/fristMark">
+          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
+            See Product
+          </button>
+        </Link>
       </div>
       <div>
         <img

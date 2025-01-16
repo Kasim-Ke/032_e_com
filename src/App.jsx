@@ -30,6 +30,19 @@ import MarkIIHeader from "./components/headphonesPage/MarkIIHeader";
 import MarkIIFeatures from "./components/headphonesPage/MarkIIFeatures";
 import MarkIIGallery from "./components/headphonesPage/MarkIIGallery";
 import MArkIIAlsoLike from "./components/headphonesPage/MArkIIAlsoLike";
+import FristMarkPage from "./components/headphonesPage/FristMarkPage";
+import FristMarkGallery from "./components/headphonesPage/FristMarkGallery";
+import FristMarkAlso from "./components/headphonesPage/FristMarkAlso";
+import FristMarkFeatures from "./components/headphonesPage/FristMarkFeatures";
+import ThirdHeaphonespage from "./components/headphonesPage/ThirdHeaphonespage";
+import ThirdFeatures from "./components/headphonesPage/ThirdFeatures";
+import ThirdGallery from "./components/headphonesPage/ThirdGallery";
+import ThirdAlsoLike from "./components/headphonesPage/ThirdAlsoLike";
+import FirstSpeakerPage from "./components/speakersPage/product-zx9-speaker/FirstSpeakerPage";
+import FirstSpeakerFeatures from "./components/speakersPage/product-zx9-speaker/FirstSpeakerFeatures";
+import FirtsSpeakerGallery from "./components/speakersPage/product-zx9-speaker/FirtsSpeakerGallery";
+import FirstSpeakerAlso from "./components/speakersPage/product-zx9-speaker/FirstSpeakerAlso";
+import SecondSpeakerPage from "./components/speakersPage/product-zx7-speaker/SecondSpeakerPage";
 
 function App() {
   return (
@@ -90,6 +103,55 @@ function App() {
               <MarkIIFeatures />
               <MarkIIGallery />
               <MArkIIAlsoLike />
+              <HomeProducts />
+            </>
+          }
+        />
+        <Route
+          path="/fristMark"
+          element={
+            <>
+              <MarkIIHeader />
+              <FristMarkPage />
+              <FristMarkFeatures />
+              <FristMarkGallery />
+              <FristMarkAlso />
+              <HomeProducts />
+            </>
+          }
+        />
+        <Route
+          path="/thirdMark"
+          element={
+            <>
+              <MarkIIHeader />
+              <ThirdHeaphonespage />
+              <ThirdFeatures />
+              <ThirdGallery />
+              <ThirdAlsoLike />
+              <HomeProducts />
+            </>
+          }
+        />
+        <Route
+          path="/firstSpeaker"
+          element={
+            <>
+              <MarkIIHeader />
+              <FirstSpeakerPage />
+              <FirstSpeakerFeatures />
+              <FirtsSpeakerGallery />
+              <FirstSpeakerAlso />
+              <HomeProducts />
+            </>
+          }
+        />
+        <Route
+          path="/secondSpeaker"
+          element={
+            <>
+              <MarkIIHeader />
+              <SecondSpeakerPage />
               <HomeProducts />
             </>
           }

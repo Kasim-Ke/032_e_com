@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import speakerDesktop from "./product-zx7-speaker/desktop/image-product.jpg";
 
 import speakerblet from "./product-zx7-speaker/desktop/image-product.jpg";
@@ -16,9 +18,11 @@ const SpeakersSecond = () => {
           detailed and accurate audio reproduction for audiophiles, mixing
           engineers, and music aficionados alike in studios and on the go.
         </p>
-        <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
-          See Product
-        </button>
+        <Link to="/secondSpeaker">
+          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
+            See Product
+          </button>
+        </Link>
       </div>
       <div>
         <img

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import markDesktop from "./product-xx59-headphones/desktop/image-category-page-preview.jpg";
 
 import markablet from "./product-xx59-headphones/tablet/image-category-page-preview.jpg";
@@ -33,9 +34,11 @@ const HeaphonesThird = () => {
           tastes with the XX59 headphones. The stylish yet durable versatile
           wireless headset is a brilliant companion at home or on the move.
         </p>
-        <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
-          See Product
-        </button>
+        <Link to="/thirdMark">
+          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white">
+            See Product
+          </button>
+        </Link>
       </div>
     </div>
   );

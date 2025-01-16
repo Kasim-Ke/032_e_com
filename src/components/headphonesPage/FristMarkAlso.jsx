@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
-import markIDesktop from "./product-xx99-mark-one-headphones/desktop/image-product.jpg";
-import markITablet from "./product-xx99-mark-one-headphones/tablet/image-product.jpg";
-import markIMobile from "./product-xx99-mark-one-headphones/mobile/image-product.jpg";
+import markIIDesktop from "./product-xx99-mark-two-headphones/desktop/image-product.jpg";
+import markIITablet from "./product-xx99-mark-two-headphones/tablet/image-product.jpg";
+import markIIMobile from "./product-xx99-mark-two-headphones/mobile/image-product.jpg";
 
 import xDesktop from "./product-xx59-headphones/desktop/image-product.jpg";
 import xITablet from "./product-xx59-headphones/tablet/image-product.jpg";
@@ -16,11 +16,11 @@ const products = [
   {
     name: "XX99 MARK I",
     images: {
-      desktop: markIDesktop,
-      tablet: markITablet,
-      mobile: markIMobile,
+      desktop: markIIDesktop,
+      tablet: markIITablet,
+      mobile: markIIMobile,
+      path: "/markII",
     },
-    path: "/fristMark",
   },
   {
     name: "XX59 ",
@@ -28,8 +28,8 @@ const products = [
       desktop: xDesktop,
       tablet: xITablet,
       mobile: xMobile,
+      path: "/thirdMark",
     },
-    path: "/thirdMark",
   },
   {
     name: "ZX9 SPEAKER",
@@ -38,11 +38,10 @@ const products = [
       tablet: speakerTablet,
       mobile: speakerMobile,
     },
-    path: "/fristMark/zx9-speaker", // Define a unique path for this product
   },
 ];
 
-const MArkIIAlsoLike = () => {
+const FristMarkAlso = () => {
   return (
     <div className="lg:w-[1110px] lg:h-[571px] md:w-[691px] md:h-[563px] w-[327px] h-[983px] flex flex-col justify-between items-center mx-auto my-[6rem] ">
       <h3 className="uppercase font-bold md:text-[32px] md:leading-[36px] tracking-[1.14px] text-[24px] leading-[36px] md:tracking-[0.86px]">
@@ -72,7 +71,7 @@ const MArkIIAlsoLike = () => {
             <h3 className="text-[24px] tracking-[1.71px] font-bold">
               {product.name}
             </h3>
-            <Link to={product.path}>
+            <Link to={product.images.path}>
               <button className="bg-[#D87D4A] hover:bg-[#FBAF85] text-white font-bold">
                 See Product
               </button>
@@ -84,4 +83,4 @@ const MArkIIAlsoLike = () => {
   );
 };
 
-export default MArkIIAlsoLike;
+export default FristMarkAlso;
