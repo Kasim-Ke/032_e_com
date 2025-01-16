@@ -34,7 +34,7 @@ function HomeProducts() {
           <Link
             to={product.path} // Use the path from the product object
             key={index}
-            className="lg:w-[350px] lg:h-[284px] md:w-[223px] md:h-[217px] w-[327px] flex flex-col justify-end hover:scale-105 duration-300 z-50"
+            className="lg:w-[350px] lg:h-[284px] md:w-[223px] md:h-[217px] w-[327px] flex flex-col justify-end hover:scale-105 duration-300 z-20"
           >
             <div className="relative flex flex-col items-center justify-end bg-[#F1F1F1] w-full lg:h-[204px] h-[165px] rounded-[8px]">
               <img
