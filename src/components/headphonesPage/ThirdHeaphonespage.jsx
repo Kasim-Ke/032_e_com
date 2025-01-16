@@ -19,13 +19,13 @@ const ThirdHeaphonespage = () => {
     <div className="relative lg:w-[1110px] lg:h-[560px] md:w-[689px] md:h-[706px] w-[327px] h-[724px] lg:flex-row my-[8rem] flex-col mx-auto flex items-center justify-between">
       <button
         onClick={() => window.history.back()}
-        className="absolute font-bold top-[-95px] left-[0px] opacity-50 hover:opacity-100 text-[17px] capitalize "
+        className="absolute font-bold top-[-88px] left-[-40px] opacity-50 hover:opacity-100 text-[17px] capitalize "
       >
         Go Back
       </button>
       <Link
         to="/"
-        className="absolute font-bold top-[-80px] right-[0px] opacity-50 hover:opacity-100"
+        className="absolute font-bold top-[-80px] right-[10px] opacity-50 hover:opacity-100"
       >
         Go Home
       </Link>
