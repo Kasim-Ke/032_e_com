@@ -49,7 +49,7 @@ import SecondSpeakerAlso from "./components/speakersPage/product-zx7-speaker/Sec
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden md:overflow-visible">
       <Navbar />
       <ScrollToTop />
       <Routes>
@@ -165,7 +165,7 @@ function App() {
       </Routes>
       <Advertisement />
       <Footer />
-    </>
+    </div>
   );
 }
 
