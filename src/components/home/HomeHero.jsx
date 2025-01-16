@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import heroDektop from "./home/desktop/image-hero.jpg";
 import heroTablet from "./home/tablet/image-header.jpg";
 
@@ -35,9 +37,11 @@ const HomeHero = () => {
             Experience natural, life like audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85]">
-            See Product
-          </button>
+          <Link to="/markII">
+            <button className="bg-[#D87D4A]  hover:bg-[#FBAF85]">
+              See Product
+            </button>
+          </Link>
         </div>
       </div>
     </div>

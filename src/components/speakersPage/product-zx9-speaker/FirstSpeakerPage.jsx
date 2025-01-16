@@ -23,6 +23,12 @@ const FirstSpeakerPage = () => {
       >
         Go Back
       </Link>
+      <Link
+        to="/"
+        className="absolute font-bold top-[-80px] right-[0px] opacity-50 hover:opacity-100"
+      >
+        Go Home
+      </Link>
       <div>
         <img
           className="w-[540px] h-[560px] object-cover lg:block hidden rounded-[8px]"
@@ -53,7 +59,7 @@ const FirstSpeakerPage = () => {
           creating new possibilities for more pleasing and practical audio
           setups.
         </p>
-        <h5 className="font-bold text-[18px]">$ 4,500</h5>
+        <h5 className="font-bold text-[18px]">€ 4,500</h5>
         <div className="flex items-center justify-between w-[296px] ">
           <div className=" w-[120px] h-[48px] bg-[#F1F1F1] flex items-center justify-between  ">
             <butto

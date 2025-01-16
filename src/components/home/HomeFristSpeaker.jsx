@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import speakerDesktop from "./home/desktop/image-speaker-zx9.png";
 
 import speakerTablet from "./home/tablet/image-speaker-zx9.png";
@@ -40,9 +42,11 @@ function HomeFristSpeaker() {
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound.
             </p>
-            <button className="bg-[#000000]  z-30  hover:bg-[#4C4C4C]">
-              See Product
-            </button>
+            <Link to="/firstSpeaker">
+              <button className="bg-[#000000]  z-30  hover:bg-[#4C4C4C]">
+                See Product
+              </button>
+            </Link>
           </div>
         </div>
       </div>

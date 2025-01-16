@@ -18,10 +18,16 @@ const EarphonePage = () => {
   return (
     <div className="relative lg:w-[1110px] lg:h-[560px] md:w-[689px] md:h-[706px] w-[327px] h-[724px] lg:flex-row my-[8rem] flex-col mx-auto flex items-center justify-between">
       <Link
-        to="/earphonesPage"
+        to="/earphones"
         className="absolute font-bold top-[-80px] left-[0px] opacity-50 hover:opacity-100"
       >
         Go Back
+      </Link>
+      <Link
+        to="/"
+        className="absolute font-bold top-[-80px] right-[0px] opacity-50 hover:opacity-100"
+      >
+        Go Home
       </Link>
       <div>
         <img
@@ -49,7 +55,7 @@ const EarphonePage = () => {
           new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even
           in noisy environments with its active noise cancellation feature.
         </p>
-        <h5 className="font-bold text-[18px]">$ 599</h5>
+        <h5 className="font-bold text-[18px]">€ 599</h5>
         <div className="flex items-center justify-between w-[296px] ">
           <div className=" w-[120px] h-[48px] bg-[#F1F1F1] flex items-center justify-between  ">
             <butto
