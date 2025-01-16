@@ -43,6 +43,9 @@ import FirstSpeakerFeatures from "./components/speakersPage/product-zx9-speaker/
 import FirtsSpeakerGallery from "./components/speakersPage/product-zx9-speaker/FirtsSpeakerGallery";
 import FirstSpeakerAlso from "./components/speakersPage/product-zx9-speaker/FirstSpeakerAlso";
 import SecondSpeakerPage from "./components/speakersPage/product-zx7-speaker/SecondSpeakerPage";
+import SecondSpeakerFeature from "./components/speakersPage/product-zx7-speaker/SecondSpeakerFeature";
+import SecondSpeakerGallery from "./components/speakersPage/product-zx7-speaker/SecondSpeakerGallery";
+import SecondSpeakerAlso from "./components/speakersPage/product-zx7-speaker/SecondSpeakerAlso";
 
 function App() {
   return (
@@ -152,6 +155,9 @@ function App() {
             <>
               <MarkIIHeader />
               <SecondSpeakerPage />
+              <SecondSpeakerFeature />
+              <SecondSpeakerGallery />
+              <SecondSpeakerAlso />
               <HomeProducts />
             </>
           }
