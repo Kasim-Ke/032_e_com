@@ -32,7 +32,7 @@ function HomeProducts() {
       <div className="lg:w-[1110px] lg:h-[284px] md:w-[689px] md:h-[217px] w-[327px] h-[683px] flex md:flex-row flex-col items-center justify-between">
         {products.map((product, index) => (
           <Link
-            to={product.path} // Use the path from the product object
+            to={product.path}
             key={index}
             className="lg:w-[350px] lg:h-[284px] md:w-[223px] md:h-[217px] w-[327px] flex flex-col justify-end hover:scale-105 duration-300 z-20"
           >
