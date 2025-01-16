@@ -37,6 +37,7 @@ const products = [
       desktop: speakerDesktop,
       tablet: speakerTablet,
       mobile: speakerMobile,
+      path: "/firtsSpeaker",
     },
   },
 ];
