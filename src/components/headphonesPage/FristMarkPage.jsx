@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
+import { useCart } from "../CartContext";
 
 import markDesktop from "./product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg";
 import markTablet from "./product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg";
@@ -7,6 +8,7 @@ import markPhone from "./product-xx99-mark-one-headphones/mobile/image-category-
 
 const FristMarkPage = () => {
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
 
   const handleIncrement = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
@@ -14,6 +16,17 @@ const FristMarkPage = () => {
 
   const handleDecrement = () => {
     setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+  };
+
+  const handleAddToCart = () => {
+    const product = {
+      id: "markI",
+      name: "XX99 Mark II",
+      price: 1759,
+      quantity,
+      image: markDesktop,
+    };
+    addToCart(product);
   };
 
   return (
@@ -73,7 +86,10 @@ const FristMarkPage = () => {
               +
             </button>
           </div>
-          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white px-4 py-2 rounded">
+          <button
+            onClick={handleAddToCart}
+            className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white px-4 py-2 rounded"
+          >
             ADD TO CART
           </button>
         </div>

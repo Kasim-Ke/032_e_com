@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
+import { useCart } from "../../CartContext";
 
 import markDesktop from "./desktop/image-category-page-preview.jpg";
 import markTablet from "./tablet/image-category-page-preview.jpg";
@@ -7,7 +8,7 @@ import markPhone from "./mobile/image-category-page-preview.jpg";
 
 const FirstSpeakerPage = () => {
   const [quantity, setQuantity] = useState(1);
-
+  const { addToCart } = useCart();
   const handleIncrement = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
   };
@@ -15,6 +16,18 @@ const FirstSpeakerPage = () => {
   const handleDecrement = () => {
     setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
   };
+
+  const handleAddToCart = () => {
+    const product = {
+      id: "zx9",
+      name: "ZX9",
+      price: 4500,
+      quantity,
+      image: markDesktop,
+    };
+    addToCart(product);
+  };
+
   return (
     <div className="relative lg:w-[1110px] lg:h-[560px] md:w-[689px] md:h-[706px] w-[327px] h-[724px] lg:flex-row my-[8rem] flex-col mx-auto flex items-center justify-between">
       <button
@@ -76,7 +89,10 @@ const FirstSpeakerPage = () => {
               +
             </button>
           </div>
-          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white px-4 py-2 rounded">
+          <button
+            onClick={handleAddToCart}
+            className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white px-4 py-2 rounded"
+          >
             ADD TO CART
           </button>
         </div>

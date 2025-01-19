@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router";
 
+import { useCart } from "../CartContext";
+
 import markIIDesktop from "./product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg";
 import markIITablet from "./product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg";
 import markIIPhone from "./product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg";
 
 const MarkIIPage = () => {
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
 
   const handleIncrement = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
@@ -14,6 +17,17 @@ const MarkIIPage = () => {
 
   const handleDecrement = () => {
     setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+  };
+
+  const handleAddToCart = () => {
+    const product = {
+      id: "xx99-mark-two",
+      name: "XX99 Mark II",
+      price: 2999,
+      quantity,
+      image: markIIDesktop,
+    };
+    addToCart(product);
   };
 
   return (
@@ -76,7 +90,10 @@ const MarkIIPage = () => {
               +
             </button>
           </div>
-          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white px-4 py-2 rounded">
+          <button
+            onClick={handleAddToCart}
+            className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white px-4 py-2 rounded"
+          >
             ADD TO CART
           </button>
         </div>

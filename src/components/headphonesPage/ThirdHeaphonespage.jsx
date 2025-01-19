@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router";
-
+import { useCart } from "../CartContext";
 import markIIDesktop from "./product-xx59-headphones/desktop/image-category-page-preview.jpg";
 import markIITablet from "./product-xx59-headphones/tablet/image-category-page-preview.jpg";
 import markIIPhone from "./product-xx59-headphones/mobile/image-category-page-preview.jpg";
 
 const ThirdHeaphonespage = () => {
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
 
   const handleIncrement = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
@@ -15,6 +16,18 @@ const ThirdHeaphonespage = () => {
   const handleDecrement = () => {
     setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
   };
+
+  const handleAddToCart = () => {
+    const product = {
+      id: "xx59",
+      name: "XX59 Headphones",
+      price: 899,
+      quantity,
+      image: markIIDesktop,
+    };
+    addToCart(product);
+  };
+
   return (
     <div className="relative lg:w-[1110px] lg:h-[560px] md:w-[689px] md:h-[706px] w-[327px] h-[724px] lg:flex-row my-[8rem] flex-col mx-auto flex items-center justify-between">
       <button
@@ -72,7 +85,10 @@ const ThirdHeaphonespage = () => {
               +
             </button>
           </div>
-          <button className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white px-4 py-2 rounded">
+          <button
+            onClick={handleAddToCart}
+            className="bg-[#D87D4A]  hover:bg-[#FBAF85] text-white px-4 py-2 rounded"
+          >
             ADD TO CART
           </button>
         </div>
