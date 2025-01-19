@@ -33,14 +33,25 @@ const products = [
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
     document.body.style.overflow = isMenuOpen ? "auto" : "hidden";
   };
 
+  const toggleCart = () => {
+    setIsCartOpen((prev) => !prev);
+    document.body.style.overflow = isCartOpen ? "hidden" : "auto";
+  };
+
   const closeMenu = () => {
     setIsMenuOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
+  const closeCart = () => {
+    setIsCartOpen(false);
     document.body.style.overflow = "auto";
   };
 
@@ -50,7 +61,14 @@ const Navbar = () => {
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black/40 z-40"
-          onClick={closeMenu} // Close overlay when clicked
+          onClick={closeMenu} // Close menu overlay when clicked
+        ></div>
+      )}
+
+      {isCartOpen && (
+        <div
+          className="fixed inset-0 bg-black/40 z-40"
+          onClick={closeCart} // Close cart overlay when clicked
         ></div>
       )}
 
@@ -82,21 +100,21 @@ const Navbar = () => {
           <div className="font-bold w-[429px] h-[25px] uppercase text-white lg:flex justify-between hidden text-[13px]">
             <Link
               to="/headphones"
-              className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
+              className="hover:text-[#D87D4A]"
               onClick={closeMenu}
             >
               headphones
             </Link>
             <Link
               to="/speakers"
-              className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
+              className="hover:text-[#D87D4A]"
               onClick={closeMenu}
             >
               speakers
             </Link>
             <Link
               to="/earphones"
-              className="cursor-pointer hover:text-[#D87D4A] duration-300 hover:scale-105"
+              className="hover:text-[#D87D4A]"
               onClick={closeMenu}
             >
               earphones
@@ -108,8 +126,24 @@ const Navbar = () => {
             className="cursor-pointer hover:scale-110 duration-300"
             src={cart}
             alt="cart"
+            onClick={toggleCart}
           />
         </div>
+
+        {/* Cart Overlay */}
+        {isCartOpen && (
+          <div className="fixed top-20 right-0 md:w-[400px] w-[300px] bg-white z-50 shadow-lg rounded-lg p-5">
+            <h2 className="text-lg font-bold mb-4">CART(0)</h2>
+            {/* Add cart items here */}
+            <p className="text-sm text-gray-600">Your cart is empty.</p>
+            <button
+              className="mt-4 bg-[#D87D4A] text-white py-2 px-4 rounded"
+              onClick={closeCart}
+            >
+              Close
+            </button>
+          </div>
+        )}
 
         {/* Tablet and Mobile Menu */}
         {isMenuOpen && (
@@ -118,13 +152,13 @@ const Navbar = () => {
               isMenuOpen ? "translate-y-[4rem]" : "-translate-y-full"
             }`}
           >
-            <div className=" md:w-[689px] md:h-[217px] w-[327px] h-[683px] flex md:flex-row flex-col items-center justify-evenly">
+            <div className="md:w-[689px] md:h-[217px] w-[327px] h-[683px] flex md:flex-row flex-col items-center justify-evenly">
               {products.map((product, index) => (
                 <Link
                   to={product.path}
                   key={index}
-                  className=" md:w-[223px] md:h-[217px] w-[327px] flex flex-col justify-end hover:scale-105 duration-300 z-20"
-                  onClick={closeMenu} // Close menu when product is clicked
+                  className="md:w-[223px] md:h-[217px] w-[327px] flex flex-col justify-end hover:scale-105 duration-300 z-20"
+                  onClick={closeMenu}
                 >
                   <div className="relative flex flex-col items-center justify-end bg-[#F1F1F1] w-full md:h-[165px] h-[135px] rounded-[8px]">
                     <img
