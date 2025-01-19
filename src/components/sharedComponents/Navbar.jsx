@@ -194,7 +194,7 @@ const Navbar = () => {
 
           <div
             ref={cartRef}
-            className="absolute top-[100px] md:right-[20%] right-[15%] md:w-[377px] w-[327px] bg-white shadow-lg rounded-lg p-4 z-50"
+            className="absolute top-[100px] md:right-[20%] mx-[6%] md:w-[377px] w-[327px] bg-white shadow-lg rounded-lg p-4 z-50"
           >
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-bold">Cart ({getTotalItems()})</h2>
