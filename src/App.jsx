@@ -50,6 +50,7 @@ import EarphonePage from "./components/earphonesPage/product-yx1-earphones/Earph
 import EarphonesFeatures from "./components/earphonesPage/product-yx1-earphones/EarphonesFeatures";
 import EarphonesGallery from "./components/earphonesPage/product-yx1-earphones/EarphonesGallery";
 import EarphonesAlso from "./components/earphonesPage/EarphonesAlso";
+import Checkout from "./components/sharedComponents/Checkout";
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
               <HomeProducts />
               <HomeFristSpeaker />
               <HomeSecondSpeaker />
+              <Advertisement />
             </>
           }
         />
@@ -77,6 +79,7 @@ function App() {
               <HeadphonesSecond />
               <HeaphonesThird />
               <HomeProducts />
+              <Advertisement />
             </>
           }
         />
@@ -88,6 +91,7 @@ function App() {
               <SpeakersFirst />
               <SpeakersSecond />
               <HomeProducts />
+              <Advertisement />
             </>
           }
         />
@@ -98,6 +102,7 @@ function App() {
               <EarphonesHeader />
               <Earphones />
               <HomeProducts />
+              <Advertisement />
             </>
           }
         />
@@ -111,6 +116,7 @@ function App() {
               <MarkIIGallery />
               <MArkIIAlsoLike />
               <HomeProducts />
+              <Advertisement />
             </>
           }
         />
@@ -124,6 +130,7 @@ function App() {
               <FristMarkGallery />
               <FristMarkAlso />
               <HomeProducts />
+              <Advertisement />
             </>
           }
         />
@@ -137,6 +144,7 @@ function App() {
               <ThirdGallery />
               <ThirdAlsoLike />
               <HomeProducts />
+              <Advertisement />
             </>
           }
         />
@@ -150,6 +158,7 @@ function App() {
               <FirtsSpeakerGallery />
               <FirstSpeakerAlso />
               <HomeProducts />
+              <Advertisement />
             </>
           }
         />
@@ -163,6 +172,7 @@ function App() {
               <SecondSpeakerGallery />
               <SecondSpeakerAlso />
               <HomeProducts />
+              <Advertisement />
             </>
           }
         />
@@ -176,11 +186,21 @@ function App() {
               <EarphonesGallery />
               <EarphonesAlso />
               <HomeProducts />
+              <Advertisement />
+            </>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <>
+              <MarkIIHeader />
+              <Checkout />
             </>
           }
         />
       </Routes>
-      <Advertisement />
+
       <Footer />
     </div>
   );

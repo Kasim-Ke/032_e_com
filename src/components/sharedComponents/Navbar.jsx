@@ -253,12 +253,20 @@ const Navbar = () => {
             </div>
 
             {/* Checkout Button */}
-            <button
-              className="mt-4 w-full py-2 bg-[#D87D4A] text-white font-bold rounded hover:bg-[#e08a5d]"
-              onClick={() => console.log("Proceed to checkout")}
-            >
-              CHECKOUT
-            </button>
+            <Link to="/checkout">
+              <button
+                className="mt-4 w-full py-2 bg-[#D87D4A] text-white font-bold rounded hover:bg-[#e08a5d]"
+                onClick={() => {
+                  if (cart.length > 0) {
+                    window.location.href = "/032_e_com/checkout"; // Navigate to the correct path
+                  } else {
+                    alert("Your cart is empty!"); // Show an alert if the cart is empty
+                  }
+                }}
+              >
+                CHECKOUT
+              </button>
+            </Link>
           </div>
         </>
       )}
