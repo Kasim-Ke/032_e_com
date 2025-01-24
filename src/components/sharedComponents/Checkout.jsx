@@ -180,7 +180,7 @@ const Checkout = () => {
               />
             </div>
           </div>
-          <button className="mt-10 mx-auto w-[279px] py-2 bg-[#D87D4A] text-white font-bold rounded hover:bg-[#e08a5d]">
+          <button className="mt-10 mx-auto w-[280px] py-2 bg-[#D87D4A] text-white font-bold rounded hover:bg-[#e08a5d]">
             CONTINUE & PAY
           </button>
         </div>
